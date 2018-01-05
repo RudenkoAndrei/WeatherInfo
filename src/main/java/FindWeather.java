@@ -55,8 +55,8 @@ public class FindWeather extends JFrame implements Serializable {
 
                 if(file == JFileChooser.APPROVE_OPTION){
                     File file1 = openFile.getSelectedFile();
-                    textField.setText(file1.getName());
-                    path = file1.getName();
+                    textField.setText(file1.getAbsolutePath());
+                    path = file1.getAbsolutePath();
                 }
             }
         });
